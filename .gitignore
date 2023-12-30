@@ -1,0 +1,9 @@
+# Ignores for C
+*.o
+
+# Ignore Emacs backups
+*~
+
+# Ignore games
+## To test the system, I used the Space Invaders ROM from https://archive.org/details/arcade_invaders
+games/

@@ -15,7 +15,7 @@ int disassemble(unsigned char* buf, int pc)
   unsigned char *op = &buf[pc];
   int opbytes = 1;
 
-  printf("%04x ", pc); // line number
+  printf("%04x    ", pc);
 
   switch (*op) {
   case 0x00: printf("NOP"); break;
@@ -276,6 +276,7 @@ int disassemble(unsigned char* buf, int pc)
   case 0xFF: printf("RST   7"); break;
   default: printf("Error: disassemble failed at PC %d: No such instruction %02x\n", pc, op[0]); exit(1);
   }
+
   printf("\n");
   return opbytes;
 }

@@ -7,3 +7,7 @@
 # Ignore games
 ## To test the system, I used the Space Invaders ROM from https://archive.org/details/arcade_invaders
 games/
+
+# Ignore executables
+interpreter/interpreter
+disassembler/disassembler
